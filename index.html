@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-pt-[80px]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation | Nuhman & Rizwana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600&family=Great+Vibes&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        scroll-behavior: smooth;
+        background-color: #fdfbf7;
+      }
+      .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      .font-cursive {
+        font-family: 'Great Vibes', cursive;
+      }
+      .font-arabic {
+        font-family: 'Amiri', serif;
+      }
+      .bg-wedding-pattern {
+        background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
+      }
+      
+      /* Advanced Scroll Reveal System */
+      .reveal {
+        opacity: 0;
+        filter: blur(8px);
+        transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                    transform 1.4s cubic-bezier(0.16, 1, 0.3, 1),
+                    filter 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: transform, opacity, filter;
+      }
+      
+      .reveal-up { transform: translateY(30px); }
+      .reveal-down { transform: translateY(-30px); }
+      .reveal-left { transform: translateX(-30px); }
+      .reveal-right { transform: translateX(30px); }
+      .reveal-scale { transform: scale(0.98); }
+
+      .reveal.active {
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0, 0) scale(1);
+      }
+
+      /* Transition Delays for Staggering */
+      .delay-100 { transition-delay: 100ms; }
+      .delay-200 { transition-delay: 200ms; }
+      .delay-300 { transition-delay: 300ms; }
+      .delay-400 { transition-delay: 400ms; }
+      .delay-500 { transition-delay: 500ms; }
+      .delay-700 { transition-delay: 700ms; }
+      .delay-1000 { transition-delay: 1000ms; }
+
+      /* Custom animations */
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .circle-progress {
+        transition: stroke-dashoffset 1s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="text-[#333]">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
