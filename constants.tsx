@@ -11,6 +11,7 @@ export const MAP_EMBED_URL = "https://www.google.com/maps?q=Keyath+Garden+Conven
 
 /**
  * MAIN BACKGROUND IMAGE (HERO)
+ * Ensure this file is shared as "Anyone with the link" in Google Drive
  */
 export const HERO_IMAGE = "https://lh3.googleusercontent.com/d/1rNvCSilriX4tfo4y8jcIbBx_c7mgnhm2"; 
 
@@ -18,8 +19,6 @@ export const WHATSAPP_NUMBER = "919072853635";
 
 /**
  * GOOGLE SHEETS AUTOMATION
- * 1. Follow the setup guide in the response.
- * 2. Paste your Google Apps Script Web App URL below.
  */
 export const GOOGLE_SHEET_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzlrjkJ503Hw2odjHCaG2ueFdiIah-BTsg9KhO6Zmr6gKs1DcI78Y1a5mCorBk3S6Yd/exec"; 
 
@@ -43,7 +42,7 @@ export const QURAN_VERSES = [
 
 /**
  * PHOTO GALLERY IMAGES
- * You can change the "alt" text below to update the captions on the website.
+ * These MUST be shared as "Anyone with the link" in Google Drive.
  */
 export const GALLERY_IMAGES = [
   { url: "https://lh3.googleusercontent.com/d/1f8NFKU7I5Inow9DHHxGa2gknqGPBhuar", alt: "Meet That Initiated a Thousand Memories" },
